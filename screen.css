@@ -185,7 +185,8 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-body,
+header,
+main#content,
 form#registration-form {
   padding-top: 1.5em; /* 30 / 20 = 1.5 */
   padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
@@ -193,10 +194,26 @@ form#registration-form {
   padding-right: 1.2em; /* 24 / 20 = 1.2 */
 }
 
+header {
+  background-color: #217FC9;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+header h1::before {
+  background-image: url(img/wing.png);
+  background-size: cover;
+  content: '';
+  float: left;
+  width: 1.5em;
+  height: 1.5em;
+}
+
 label {
   display: block;
 }
 
+header,
+section.banner,
 form#registration-form li {
   margin-bottom: 0.6em; /* 12 / 20 = 0.6 */
 }
