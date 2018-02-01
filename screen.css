@@ -179,3 +179,8 @@ textarea {
 }
 /* stylelint-enable */
 
+html {
+  font-size: 1.25em; /* 20 / 16 = 1.25 */
+  line-height: 1.5em; /* 30 / 20 = 1.5 */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
