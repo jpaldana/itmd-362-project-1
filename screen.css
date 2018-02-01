@@ -208,6 +208,10 @@ header h1::before {
   height: 1.5em;
 }
 
+section.banner {
+  text-align: center;
+}
+
 label {
   display: block;
 }
