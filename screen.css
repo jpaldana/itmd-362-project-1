@@ -184,3 +184,19 @@ html {
   line-height: 1.5em; /* 30 / 20 = 1.5 */
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+body,
+form#registration-form {
+  padding-top: 1.5em; /* 30 / 20 = 1.5 */
+  padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
+  padding-left: 1.2em; /* 24 / 20 = 1.2 */
+  padding-right: 1.2em; /* 24 / 20 = 1.2 */
+}
+
+label {
+  display: block;
+}
+
+form#registration-form li {
+  margin-bottom: 0.6em; /* 12 / 20 = 1.2 */
+}
