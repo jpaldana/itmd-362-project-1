@@ -243,4 +243,10 @@ form#registration-form input[type='checkbox'] {
     padding-right: 24%; /* 240 / 1000 = 0.24 */
   }
 
+  form#registration-form li.half-size {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+  }
+
 }
