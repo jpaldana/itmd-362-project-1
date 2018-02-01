@@ -209,3 +209,21 @@ form#registration-form input[type='checkbox'] {
   float: left;
   margin-right: 1em;
 }
+
+@media screen and (min-width: 1000px) {
+  /*
+    5-column grid for content
+    1000px total
+     50   140   50   140   50   140   50   140   50   140   50
+    |  |       |  |       |  |       |  |       |  |       |  |
+    |  |       |  |       |  |       |  |       |  |       |  |
+    |  |       |  [ - - - - - CONTENT - - - - - ]  |       |  |
+    |  |       |  |       |  |       |  |       |  |       |  |
+  */
+
+  #content {
+    padding-left: 24%; /* 240 / 1000 = 0.24 */
+    padding-right: 24%; /* 240 / 1000 = 0.24 */
+  }
+
+}
