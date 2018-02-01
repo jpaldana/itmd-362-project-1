@@ -198,5 +198,10 @@ label {
 }
 
 form#registration-form li {
-  margin-bottom: 0.6em; /* 12 / 20 = 1.2 */
+  margin-bottom: 0.6em; /* 12 / 20 = 0.6 */
+}
+
+form#registration-form input {
+  width: 100%;
+  box-sizing: border-box;
 }
