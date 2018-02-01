@@ -201,7 +201,11 @@ form#registration-form li {
   margin-bottom: 0.6em; /* 12 / 20 = 0.6 */
 }
 
-form#registration-form input {
+form#registration-form input:not([type='checkbox']) {
   width: 100%;
   box-sizing: border-box;
+}
+form#registration-form input[type='checkbox'] {
+  float: left;
+  margin-right: 1em;
 }
