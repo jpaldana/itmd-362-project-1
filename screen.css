@@ -260,9 +260,12 @@ form#registration-form input:not([type='checkbox']) {
   padding: 0 1em; /* remove vertical padding; add some horizontal padding */
   border: 0;
 }
+
 form#registration-form input[type='checkbox'] {
   float: left;
   margin-right: 1em;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 @media screen and (min-width: 1000px) {
