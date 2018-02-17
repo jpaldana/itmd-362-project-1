@@ -15,15 +15,15 @@ $("#registration-form").on("submit", function(e) {
   }
   if (textName.length < minCharacters) {
     formValid = false;
-    $("#registration-form ol").append("<li class='user-alert'>Your name must have at least " + minCharacters + " characters.</li>");
+    addHintText("#form-name", true, "Your name must have at least " + minCharacters + " characters.");
   }
   if (textUsername.length < minCharacters) {
     formValid = false;
-    $("#registration-form ol").append("<li class='user-alert'>Your username must have at least " + minCharacters + " characters.</li>");
+    addHintText("#form-username", true, "Your username must have at least " + minCharacters + " characters.");
   }
   if (textPassword.length < minCharacters) {
     formValid = false;
-    $("#registration-form ol").append("<li class='user-alert'>Your password must have at least " + minCharacters + " characters.</li>");
+    addHintText("#form-password", true, "Your password must have at least " + minCharacters + " characters.");
   }
   if (!checkAgeVerify) {
     formValid = false;
