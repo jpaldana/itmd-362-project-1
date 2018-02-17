@@ -298,7 +298,20 @@ section#terms ul li {
     padding-left: 1.2em; /* 24 / 20 = 1.2 */
     padding-right: 1.2em; /* 24 / 20 = 1.2 */
   }
-  
+
+}
+
+@media screen and (min-width: 800px) {
+  /*
+    At 800px, add some spacing between the content border and the left/right edge
+  */
+  main#content,
+  form#registration-form,
+  section#terms {
+    margin-left: 1.2em; /* 24 / 20 = 1.2 */
+    margin-right: 1.2em; /* 24 / 20 = 1.2 */
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
