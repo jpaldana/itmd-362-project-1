@@ -235,10 +235,13 @@ form#registration-form li {
   margin-bottom: 0.6em; /* 12 / 20 = 0.6 */
 }
 
+form#registration-form li p.hint {
+  font-size: 0.75em;
+}
+
 form#registration-form li p.user-alert {
   margin-top: 0.6em;
   color: red;
-  font-size: 0.75em;
 }
 
 form#registration-form input:not([type='checkbox']) {
