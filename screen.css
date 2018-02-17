@@ -246,17 +246,19 @@ form#registration-form li {
 
 form#registration-form li p.hint {
   font-size: 0.75em;
+  line-height: 2em; 
 }
 
 form#registration-form li p.user-alert {
-  margin-top: 0.6em;
   color: red;
 }
 
 form#registration-form input:not([type='checkbox']) {
   width: 100%;
   box-sizing: border-box;
-  line-height: 1.5em;
+  line-height: 3em; /* occupy two line(-heights) */
+  padding: 0 1em; /* remove vertical padding; add some horizontal padding */
+  border: 0;
 }
 form#registration-form input[type='checkbox'] {
   float: left;
