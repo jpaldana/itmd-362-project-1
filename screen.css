@@ -217,6 +217,10 @@ header h1::before {
   height: 1.5em;
 }
 
+main#content {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 section.banner {
   text-align: center;
 }
