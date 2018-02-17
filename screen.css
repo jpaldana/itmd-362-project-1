@@ -190,6 +190,14 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+h1,
+h2,
+h3,
+label,
+input {
+  font-family: 'Varela Round', sans-serif;
+}
+
 body {
   min-height: 100vh;
   background-color: #25A0AC;
@@ -206,7 +214,6 @@ form#registration-form {
   padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
   padding-left: 1.2em; /* 24 / 20 = 1.2 */
   padding-right: 1.2em; /* 24 / 20 = 1.2 */
-  font-family: 'Varela Round', sans-serif;
 }
 
 header {
@@ -269,8 +276,8 @@ form#registration-form input[type='checkbox'] {
   width: 1.5em;
 }
 
-form#registration-form li#terms {
-  
+section#terms {
+
 }
 
 @media screen and (min-width: 1000px) {
