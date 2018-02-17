@@ -179,6 +179,11 @@ textarea {
 }
 /* stylelint-enable */
 
+/**
+* Using modularscale @ 20px base with 1.333 ratio
+* http://www.modularscale.com/?20&px&1.333
+*/
+
 html {
   font-size: 1.25em; /* 20 / 16 = 1.25 */
   line-height: 1.5em; /* 30 / 20 = 1.5 */
@@ -224,15 +229,19 @@ main#content {
 section.banner {
   text-align: center;
 }
+section.banner h2 {
+  font-size: 1.333em; /* one step higher than base */
+  line-height: 2.2em; /* 44 / 20 = 2.2 */
+}
 
 label {
   display: block;
+  line-height: 1.5em;
 }
 
 header,
-section.banner,
 form#registration-form li {
-  margin-bottom: 0.6em; /* 12 / 20 = 0.6 */
+  margin-bottom: 1.5em; /* 30 / 20 = 1.5 (one line-height) */
 }
 
 form#registration-form li p.hint {
@@ -247,6 +256,7 @@ form#registration-form li p.user-alert {
 form#registration-form input:not([type='checkbox']) {
   width: 100%;
   box-sizing: border-box;
+  line-height: 1.5em;
 }
 form#registration-form input[type='checkbox'] {
   float: left;
