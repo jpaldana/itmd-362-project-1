@@ -209,7 +209,8 @@ body {
 
 header,
 main#content,
-form#registration-form {
+form#registration-form,
+section#terms {
   padding-top: 1.5em; /* 30 / 20 = 1.5 */
   padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
   padding-left: 1.2em; /* 24 / 20 = 1.2 */
@@ -230,16 +231,18 @@ header h1::before {
   height: 1.5em;
 }
 
-main#content {
+main#content,
+section#terms {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 section.banner {
   text-align: center;
 }
-section.banner h2 {
+section.banner h2,
+section#terms h3 {
   font-size: 1.333em; /* one step higher than base */
-  line-height: 2.2em; /* 44 / 20 = 2.2 */
+  line-height: 2.25em; /* 3em / 1.333em */
 }
 
 label {
@@ -248,7 +251,8 @@ label {
 }
 
 header,
-form#registration-form li {
+form#registration-form li,
+section#terms {
   margin-bottom: 1.5em; /* 30 / 20 = 1.5 (one line-height) */
 }
 
@@ -277,7 +281,12 @@ form#registration-form input[type='checkbox'] {
 }
 
 section#terms {
-
+  margin-top: 1.5em;
+  line-height: 1.5em;
+}
+section#terms ul li {
+  margin-left: 1em;
+  list-style-type: square;
 }
 
 @media screen and (min-width: 1000px) {
