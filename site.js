@@ -11,7 +11,7 @@ $("#registration-form").on("submit", function(e) {
 
   if (!reEmail.test(textEmail)) {
     formValid = false;
-    $("#registration-form ol").append("<li class='user-alert'>Invalid email address.</li>");
+    $("#form-email").next("p.hint").text("Invalid email address.");
   }
   if (textName.length < minCharacters) {
     formValid = false;
@@ -35,4 +35,3 @@ $("#registration-form").on("submit", function(e) {
   }
   e.preventDefault();
 });
-
