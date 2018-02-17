@@ -213,8 +213,6 @@ form#registration-form,
 section#terms {
   padding-top: 1.5em; /* 30 / 20 = 1.5 */
   padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
-  padding-left: 1.2em; /* 24 / 20 = 1.2 */
-  padding-right: 1.2em; /* 24 / 20 = 1.2 */
 }
 
 header {
@@ -287,6 +285,20 @@ section#terms {
 section#terms ul li {
   margin-left: 1em;
   list-style-type: square;
+}
+
+@media screen and (min-width: 600px) {
+  /*
+    For less < 600px, maximize content width by removing left/right padding
+  */
+  header,
+  main#content,
+  form#registration-form,
+  section#terms {
+    padding-left: 1.2em; /* 24 / 20 = 1.2 */
+    padding-right: 1.2em; /* 24 / 20 = 1.2 */
+  }
+  
 }
 
 @media screen and (min-width: 1000px) {
