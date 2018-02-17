@@ -185,6 +185,15 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #25A0AC;
+  background-image: url(img/hills.png);
+  background-position: center bottom;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
 header,
 main#content,
 form#registration-form {
