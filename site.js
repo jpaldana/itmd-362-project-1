@@ -27,7 +27,7 @@ $("#registration-form").on("submit", function(e) {
   }
   if (!checkAgeVerify) {
     formValid = false;
-    $("#registration-form ol").append("<li class='user-alert'>You must be 18 years or older to use this website.</li>");
+    addHintText("#form-ageverify", true, "You must be 18 years or older to use this website.");
   }
   if (formValid) {
     $(this).remove();
@@ -38,9 +38,9 @@ $("#registration-form").on("submit", function(e) {
 
 function addHintText(target, isError, text) {
   if (isError) {
-    $(target).next("p.hint").addClass("user-alert").text(text);
+    $(target).nextAll("p.hint").addClass("user-alert").text(text);
   }
   else {
-    $(target).next("p.hint").removeClass("user-alert").text(text);
+    $(target).nextAll("p.hint").removeClass("user-alert").text(text);
   }
 }
