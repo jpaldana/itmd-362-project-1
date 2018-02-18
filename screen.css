@@ -321,13 +321,27 @@ section#terms ul li {
      50   140   50   140   50   140   50   140   50   140   50
     |  |       |  |       |  |       |  |       |  |       |  |
     |  |       |  |       |  |       |  |       |  |       |  |
-    |  |       |  [ - - - - - CONTENT - - - - - ]  |       |  |
+    |  | (old) |  [ - - - - - CONTENT - - - - - ]  |       |  |
+    |  |       |  |       |  |       |  |       |  |       |  |
+    |  [ - - - - - CONTENT - - - - - ]  [ - - - TERMS - - -]  |
     |  |       |  |       |  |       |  |       |  |       |  |
   */
 
-  #content {
-    padding-left: 24%; /* 240 / 1000 = 0.24 */
-    padding-right: 24%; /* 240 / 1000 = 0.24 */
+  main#content,
+  section#terms {
+    margin-top: 0;
+    float: left;
+    box-sizing: border-box;
+  }
+  main#content {
+    margin-left: 5%; /* 50 / 1000 = 0.05 */
+    margin-right: 5%; /* 50 / 1000 = 0.05 */
+    width: 52%; /* 520 / 1000 = 0.52 */
+  }
+  section#terms {
+    margin-left: 0;
+    margin-right: 5%; /* 50 / 1000 = 0.05 */
+    width: 33%; /* 330 / 1000 = 0.33 */
   }
 
   form#registration-form li.half-size {
