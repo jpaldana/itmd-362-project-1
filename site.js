@@ -4,10 +4,11 @@ $("#registration-form").on("submit", function(e) {
   var textUsername = $("#form-username").val();
   var textPassword = $("#form-password").val();
   var checkAgeVerify = $("#form-ageverify").is(":checked");
+  var checkTermsVerify = $("#form-terms").is(":checked");
   var reEmail = /.*@.*/;
   var formValid = true;
   var minCharacters = 7;
-  $(".user-alert").remove();
+  $(".user-alert").text("").removeClass("user-alert");
 
   if (!reEmail.test(textEmail)) {
     formValid = false;
@@ -28,6 +29,10 @@ $("#registration-form").on("submit", function(e) {
   if (!checkAgeVerify) {
     formValid = false;
     addHintText("#form-ageverify", true, "You must be 18 years or older to use this website.");
+  }
+  if (!checkTermsVerify) {
+    formValid = false;
+    addHintText("#form-terms", true, "You must agree to the terms and conditions.");
   }
   if (formValid) {
     $(this).remove();
