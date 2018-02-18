@@ -10,6 +10,15 @@ $("#registration-form").on("submit", function(e) {
   var minCharacters = 7;
   $(".user-alert").text("").removeClass("user-alert");
 
+  function addHintText(target, isError, text) {
+    if (isError) {
+      $(target).nextAll("p.hint").addClass("user-alert").text(text);
+    }
+    else {
+      $(target).nextAll("p.hint").removeClass("user-alert").text(text);
+    }
+  }
+
   if (!reEmail.test(textEmail)) {
     formValid = false;
     addHintText("#form-email", true, "Invalid email address.");
@@ -40,12 +49,3 @@ $("#registration-form").on("submit", function(e) {
   }
   e.preventDefault();
 });
-
-function addHintText(target, isError, text) {
-  if (isError) {
-    $(target).nextAll("p.hint").addClass("user-alert").text(text);
-  }
-  else {
-    $(target).nextAll("p.hint").removeClass("user-alert").text(text);
-  }
-}
