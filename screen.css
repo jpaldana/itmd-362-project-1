@@ -198,7 +198,7 @@ input {
   font-family: "Varela Round", sans-serif;
 }
 
-body.main {
+body#main {
   min-height: 100vh;
   background-color: #25A0AC;
   background-image: url(img/hills.png);
