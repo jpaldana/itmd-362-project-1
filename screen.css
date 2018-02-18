@@ -195,7 +195,7 @@ h2,
 h3,
 label,
 input {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
@@ -223,7 +223,7 @@ header {
 header h1::before {
   background-image: url(img/wing.png);
   background-size: cover;
-  content: '';
+  content: "";
   float: left;
   width: 1.5em;
   height: 1.5em;
@@ -257,14 +257,14 @@ section#terms {
 
 form#registration-form li p.hint {
   font-size: 0.75em;
-  line-height: 2em; 
+  line-height: 2em;
 }
 
 form#registration-form li p.user-alert {
   color: red;
 }
 
-form#registration-form input:not([type='checkbox']) {
+form#registration-form input:not([type="checkbox"]) {
   width: 100%;
   box-sizing: border-box;
   line-height: 3em; /* occupy two line(-heights) */
@@ -272,7 +272,7 @@ form#registration-form input:not([type='checkbox']) {
   border: 0;
 }
 
-form#registration-form input[type='checkbox'] {
+form#registration-form input[type="checkbox"] {
   float: left;
   margin-right: 1em;
   height: 1.5em;
