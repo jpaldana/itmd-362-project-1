@@ -213,6 +213,8 @@ form#registration-form,
 section#terms {
   padding-top: 1.5em; /* 30 / 20 = 1.5 */
   padding-bottom: 1.5em; /* 30 / 20 = 1.5 */
+  padding-left: 0.6em; /* 12 / 20 = 0.6 */
+  padding-right: 0.6em; /* 12 / 20 = 0.6 */
 }
 
 header {
@@ -290,7 +292,7 @@ section#terms ul li {
 
 @media screen and (min-width: 600px) {
   /*
-    For less < 600px, maximize content width by removing left/right padding
+    For less < 600px, maximize content width by reducing left/right padding
   */
   header,
   main#content,
