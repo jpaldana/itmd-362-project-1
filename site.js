@@ -36,7 +36,7 @@ $("#registration-form").on("submit", function(e) {
   }
   if (formValid) {
     $(this).remove();
-    $("#content").append("<p>Thank you for your input.</p>");
+    $("#content").append("<p>Thank you for your registration to ClassicWorld! Hope to see you in game soon.</p>");
   }
   e.preventDefault();
 });
