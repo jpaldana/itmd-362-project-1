@@ -243,7 +243,8 @@ section#terms h3 {
   line-height: 2.25em; /* 3em / 1.333em */
 }
 
-label {
+label,
+main#content > p { /* for successful registration */
   display: block;
   line-height: 1.5em;
 }
